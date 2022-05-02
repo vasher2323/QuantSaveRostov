@@ -1,7 +1,12 @@
 from django.db import models
 
 # Create your models here.
+User 
 class Article(Model):
-    def __init__():
-        text()
-        
+    
+    title = models.
+    prev_img=
+    Pod_title
+    Author
+    data
+    COntent
