@@ -1,0 +1,26 @@
+{% extends "article/base.html" %}
+
+{% block main %}
+    <main>
+        <div>
+
+        </div>
+        <div class=news>
+            {% for article in articles %}
+            {{ article }}
+            <div>
+                <a href="article/{{ article.id }}">
+                    <img src={{article.prev_img}} alt="">
+                    <h3 class="broun">{{article.category}} </h3>
+                    <h2>{{article.title}} </h2>
+                    <p>{{article.subtitle}} </p>
+                    <p class="">{{article.authors}} </p>
+                </a>
+                <hr class = "line">
+                
+            </div>
+            {% endfor %}
+        </div>
+
+    </main>
+    {% endblock main %}

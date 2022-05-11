@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ростов</title>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+</head>
+<body>
+    {% block header %}
+    <header class="flex">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="people">Люди</a>
+            <a href="place">Места</a>
+            <a href="news">События</a>           
+        </nav>
+        <div class="flex row edge">
+            <form action="">
+                <input type="search">
+                <input type="submit" value="найти">
+            </form>
+        </div>
+        
+    </header>
+    {% endblock header %}
+    {% block main %}
+
+    {% endblock main %}
+    {% block footer %}
+    <footer>
+
+    </footer>
+    {% endblock footer %}
+</body>
+</html>
