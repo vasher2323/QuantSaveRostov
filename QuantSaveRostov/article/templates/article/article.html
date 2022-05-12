@@ -1,0 +1,28 @@
+{% extends "article/base.html" %}
+
+{% block main %}
+    <main>
+        <div>
+
+        </div>
+        <div class=news>
+            
+            {{ article }}
+            <div>
+                    
+                    <h2>{{article.title}} </h2>
+                    <p>{{article.subtitle}} </p>
+                    
+                    <h3 class="broun">{{article.category}} </h3>
+                    <div class=flex>
+                        <p class="">{{article.authors}} </p>
+                        <p class="">{{article.pub_data}} </p>
+                    </div>
+                    <div>
+                        {{article.content|safe}}
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    {% endblock main %}

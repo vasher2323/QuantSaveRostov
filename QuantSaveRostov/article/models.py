@@ -21,3 +21,4 @@ class Article(models.Model):
     publish = models.BooleanField(default = False)
     def __str__(self):
         return self.title
+        
